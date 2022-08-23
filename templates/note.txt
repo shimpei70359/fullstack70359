@@ -1,0 +1,35 @@
+pip3 install virtualenv                 //install file
+python3 -m venv venv
+pip3 install flask flask-sqlalchemy
+
+https://www.youtube.com/watch?v=Z1RJmh_OqeA   //tutorial video
+
+--daabaseの作成--
+terminalに
+
+cls
+python
+from app import db
+db.create_all()
+exit()
+の順に指示だし
+
+--pipとは--
+pythonコードでいろんなことをする機能がまとめてあるシステムのこと
+requirement.txt　>>>>>　指定のパッケージをしていのバージョンで一括インストールできる
+
+--gitとは--
+オフラインでもコードの書き換えをしたり、変更履歴を残したりすることができる管理システム
+＞＞＞＞チームで複数の人が１つのプロジェクトに手をくわえる際に、修正の履歴が残るため分かりやすくなる
+インストールしたら、各フォルダの横に[U] の文字が付く
+
+今まで＞＞＞
+共有フォルダ(リポジトリ/repository)　ー－－Aさん
+　　　　　　　　　　　　　          |ー－－－Bさん
+　　　　　　　　　　　　　          |ー－－－Cさん
+
+git導入＞＞＞
+共有フォルダ　---rocal repository ---A さん
+　　　　　　　|---rocal repository ---Bさん
+             |---rocal repository --- ｃさん
+           

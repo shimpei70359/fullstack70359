@@ -1,0 +1,82 @@
+
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+table {
+    border-color: black;
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    border-collapse:collapse;
+    border:3px solid rgb(13, 12, 12);
+  
+    width: 70%;
+    margin: 0 auto;
+    
+  }
+  
+  th
+  {
+    background-color: crimson;
+    color: azure;
+  }
+  td, th {
+    border-collapse:collapse;
+    border:1px solid #000;
+    font-size:30px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+
+  
+h1{
+    font-size: 100px;
+    color:brown;
+
+}
+.text1{
+    text-align: center;
+}
+.page{
+    text-align: center;
+}
+.jumbotron{
+    display: table;
+    background-color: aquamarine;
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+img{
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 5px;
+    border:double;
+    text-align: center;
+}
+
+h2{
+font-size: 70px;
+margin: 0 40px;
+padding: 10px 20px;
+border: double;
+border-color: red;
+background-color:rgb(117, 167, 242);
+font-weight: bold;
+}
+
+p{
+  font-size: 50px;
+  width: 60%;
+  margin: 30px 40px;
+  padding: 10px 20px;
+  border: double;
+  border-color: blue;
+  background-color: lightyellow;
+  font-weight: bold;
+ 
+}

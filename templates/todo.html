@@ -1,0 +1,48 @@
+{% extends 'base.html'  %}
+
+{% block head %} <title>Todo Test</title> {% endblock %}
+
+
+
+{% block body %}
+
+<p> here is todo page</p>
+<div class ="content">
+        <h1>Todo list</h1>
+
+<table>
+  <thead>
+    <tr style="text-align: center;">
+      <th>Task</th>
+      <th>Added</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for task in tasks %}
+    <form name="myForm" action="/todo" onsubmit="return validateForm()" method="POST">   <!-- todoが空白でaddを押すとエラーを吐く  -->
+    <tr>
+      <td style="width: 800px;">{{ task.content }}</td>  
+      <td>{{ task.date_created.date() }}</td> 
+         <td>
+           <a href="/delete/{{ task.id }}"onclick = "return confirm('Are you sure to delite this item?')"
+           >Delete</a>
+            &nbsp; <a href="/update/{{ task.id }}">Update</a>
+         </td>
+    </tr>
+    {% endfor %}
+    
+    <form action="/todo" method="POST"> <!--  app.pyのPORTメソッドを呼び出し -->
+              <tr>
+                 <td colspan="2">
+                   <input type="text" name="content" id="content" style="width: 80%;">
+                 </td>
+               <td> 
+                <input type="submit" value="Add Task" style="width: 80%;">
+              </td>
+               </tr>
+            </form>
+            </tbody>
+          </table>
+      </div>
+      {% endblock %} 

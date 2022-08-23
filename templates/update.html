@@ -1,0 +1,29 @@
+{% extends 'base.html'  %}
+{% block head %} <title>Todo Test</title> {% endblock %}
+{% block body %}
+
+<p> here is todo page</p>
+<div class ="content">
+        <h1>Todo Update Task</h1>
+  
+    <div class="form">
+        <table >
+           
+        <tbody style="text-align:left;">
+        <form nem="myForm" action="/update/{{task.id}}" onsubmit="return validateForm()" method="POST">
+        <tr>
+            <td>
+            <input type="text" name="content" id="content" value="{{task.content}}" style="width: 100%;">
+            </td>
+            <td>
+            <input type="submit" value="Update">
+            </td>
+        </tr>
+        </tbody>
+        </form>
+        </table>
+    </div>
+
+  
+</div>
+      {% endblock %} 

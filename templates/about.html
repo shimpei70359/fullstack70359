@@ -1,0 +1,19 @@
+{% extends 'base.html'  %}
+
+{% block head %} <title>About</title> {% endblock %}
+
+
+
+{% block body %}
+
+<h2> hello world</h2>
+<div style="text-align:center">
+<p> here is about page </p>
+<p>I write Loop code in this page</p>
+</div>
+{% for fruit in fruits: %}
+<h2>
+  {%print("I eat: " + (fruit) + " everyday")%}
+</h2>
+{% endfor %}
+{% endblock %}
